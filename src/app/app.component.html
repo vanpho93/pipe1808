@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div *ngFor="let user of users | sortuser: sortProp">
+  <div *ngFor="let user of users | filterage: 24 | sortuser: sortProp">
     <h3>{{ user.name }}</h3>
     <p>Age: {{ user.age }}</p>
     <p>Height: {{ user.height }}</p>
@@ -9,4 +9,3 @@
   <button  (click)="setSortProps('name')">Name</button>
   <button  (click)="setSortProps('height')">Height</button>
 </div>
-
