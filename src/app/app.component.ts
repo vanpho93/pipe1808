@@ -12,8 +12,8 @@ export class AppComponent {
   age = Promise.resolve(10);
   car = { price: 1000, color: 'red' };
   users = [
-    { name: 'Ti', age: 10, height: 150 },
-    { name: 'Teo', age: 15, height: 140 },
-    { name: 'Tun', age: 20, height: 160 },
+    { name: 'Ti', age: 30, height: 150 },
+    { name: 'Teo', age: 20, height: 140 },
+    { name: 'Tun', age: 25, height: 160 },
   ];
 }
