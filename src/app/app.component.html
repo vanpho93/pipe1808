@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div *ngFor="let user of users | sortheight">
+  <div *ngFor="let user of users | sortuser: 'name'">
     <h3>{{ user.name }}</h3>
     <p>Age: {{ user.age }}</p>
     <p>Height: {{ user.height }}</p>
