@@ -16,4 +16,8 @@ export class AppComponent {
     { name: 'Teo', age: 20, height: 140 },
     { name: 'Tun', age: 25, height: 160 },
   ];
+  sortProp = 'age';
+  setSortProps(newSortProp) {
+    this.sortProp = newSortProp;
+  }
 }

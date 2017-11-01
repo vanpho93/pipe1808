@@ -4,6 +4,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class SortUserPipe implements PipeTransform {
     transform(users: any[], propName: string) {
-        return users.sort((a, b) => a[propName] - b[propName]);
+        return users.sort((a, b) => {
+            if (typeof a[propName] === 'number') {
+                return a[propName] - b[propName];
+            }
+            return (a[propName] as string).localeCompare(b[propName]);
+        });
     }
 }
